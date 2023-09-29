@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 String nro = lstRegistros.get(position);
 
 
-                String urlWP = "http://api.whatsapp.com/send?phone=55" + nro;
+                String urlWP = "http://api.whatsapp.com/send?phone=351" + nro;
                 Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(urlWP));
                 browserIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
 
