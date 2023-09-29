@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    //Método inicial, entrada da execução do Aplicativo
     protected void onResume() {
         super.onResume();
         CarregaChamadas();
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
         lvwListaChamadas.setAdapter(adapter);
     }
 
+    //Lê o histórico de chamadas do telefone
     private void CarregaChamadas() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_CALL_LOG) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
