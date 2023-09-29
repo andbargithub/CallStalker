@@ -46,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
         lvwListaChamadas.setOnItemClickListener(new AdapterView.OnItemClickListener(){
 
+            //Abre o browser com o número para averiguar se existe no Whatsapp
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id)
             {
